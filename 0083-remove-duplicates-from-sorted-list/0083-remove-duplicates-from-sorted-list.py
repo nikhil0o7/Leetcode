@@ -8,12 +8,14 @@ class Solution:
         if head == None:
             return None
         prev = head
-        current = head.next
-        while current:
-            if prev.val == current.val:
-                prev.next = current.next
-                current = current.next
+        curr = head.next
+        while curr:
+            if prev.val == curr.val:
+                prev.next = curr.next
+                curr = curr.next
             else:
                 prev = prev.next
-                current = current.next
+                curr = curr.next
         return head
+        
+        
