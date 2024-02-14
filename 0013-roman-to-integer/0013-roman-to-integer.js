@@ -21,8 +21,6 @@ var romanToInt = function(s) {
             }else {
                 total+= values[s[i]]
                 i+=1
-                
-                
             }
         }
     return total;
